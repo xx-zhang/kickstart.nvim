@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win32", // Win32, Linux, Mac 这3名字是针对特定平台的保留字，系统会自动匹配。其他名字任意
+            "includePath": [
+                "${workspaceFolder}/src/**",
+                "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.15.26726/include",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/winrt",
+                "C:/Program Files (x86)/vcpkg/installed/x64-windows/include",
+                "${workspaceFolder}/contrib/include",
+                "${workspaceFolder}/contrib/resource/fltk/include",
+                // "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/10.0.17134.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/cppwinrt/winrt",
+                "C:/Program Files (x86)/vcpkg/installed/x64-windows/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.17134.0",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.15.26726/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}

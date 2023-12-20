@@ -1,0 +1,70 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++:Debug",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/MDd",
+                "/Debug",
+                "/Fe${fileDirname}\\Debug\\${fileBasenameNoExtension}.exe",
+                "/Fo${fileDirname}\\Debug\\${fileBasenameNoExtension}.obj",
+                "/Fd${fileDirname}\\Debug\\${fileBasenameNoExtension}.pdb",
+                "/IC:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.15.26726/include",
+                "/IC:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/ucrt",
+                "/IC:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/winrt",
+                // "C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/10.0.17134.0/um",
+                "/IC:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/shared",
+                "/IC:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/cppwinrt/winrt",
+                "/DUNICODE",
+                "/D_UNICODE",
+                "/D_DEBUG",
+                "${file}",
+                "user32.lib",
+                "kernel32.lib",
+                "shell32.lib"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "MSVC Compiler"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++:Release",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/MT",
+                "/Fe${fileDirname}\\Release\\${fileBasenameNoExtension}.exe",
+                "/Fo${fileDirname}\\Release\\${fileBasenameNoExtension}.obj",
+                "/Fd${fileDirname}\\Release\\${fileBasenameNoExtension}.pdb",
+                "/DUNICODE",
+                "/D_UNICODE",
+                "/DNDEBUG",
+                "${file}",
+                "user32.lib",
+                "kernel32.lib",
+                "shell32.lib"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "MSVC Compiler"
+        }
+    ]
+}
